@@ -18,7 +18,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 nav ul li a.current {
@@ -26,7 +26,8 @@ nav ul li a.current {
     text-decoration: underline;
 }
 h1 {
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
+    font-family: Arial, sans-serif; 
     font-weight: bold; 
     color: #333; 
     margin: 20px 0; 
@@ -42,6 +43,7 @@ p {
 }
 h2 {
     font-size: 2rem;
+    font-family: Arial, sans-serif;
     font-weight: bold;
     color: #333;
     margin: 15px 0;
@@ -95,13 +97,20 @@ div{
     padding: 0;
     line-height: 1.5;
 }
-title{
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
+.container {
+    display: grid;
+    grid-template-columns: 1fr; /* One column */
+    grid-gap: 10px; /* Smaller gap between grid items */
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout with tighter spacing */
+    grid-gap: 10px; /* Smaller gap between grid items */
+}
 
-
-
+/* Style for individual pet content */
+.grid-container > div {
+    background-color: #f2f2f2; /* Background color for each grid item */
+    padding: 20px; /* Padding around each grid item */
+}
