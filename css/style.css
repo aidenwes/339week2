@@ -139,8 +139,11 @@ div{
 h3 {
     font-size: 1.3rem;
 }
-a {
+a.nav-link {
     color: #007bff;
+}
+#skip-link {
+    color: #000;
 }
 li {
     margin-bottom: 8px;
