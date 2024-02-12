@@ -9,6 +9,7 @@
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin-top: 8px;
 }
 
 nav ul li {
@@ -24,6 +25,7 @@ nav ul li a {
 nav ul li a.current {
     font-weight: bold;
     text-decoration: underline;
+    color: purple;
 }
 h1 {
     font-size: 2.5rem;
@@ -31,7 +33,7 @@ h1 {
     font-weight: bold; 
     color: #333; 
     margin: 20px 0; 
-    line-height: 1.2;
+    line-height: 1;
 }
 p {
     font-size: 16px;
@@ -60,11 +62,17 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 video {
     max-width: 100%;
     height: auto;
     display: block;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 ul, li, ol {
     font-family: Arial, sans-serif;
@@ -99,18 +107,55 @@ div{
 }
 .container {
     display: grid;
-    grid-template-columns: 1fr; /* One column */
-    grid-gap: 10px; /* Smaller gap between grid items */
+    grid-template-columns: 1fr;
+    grid-gap: 10px; 
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout with tighter spacing */
-    grid-gap: 10px; /* Smaller gap between grid items */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    grid-gap: 10px;
 }
 
-/* Style for individual pet content */
 .grid-container > div {
-    background-color: #f2f2f2; /* Background color for each grid item */
-    padding: 20px; /* Padding around each grid item */
+    background-color: #f2f2f2; 
+    padding: 20px; 
+}
+@keyframes example {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .animated-element {
+    animation: example 1s infinite;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .animated-element {
+      animation: none;
+    }
+  }
+h3 {
+    font-size: 1.3rem;
+}
+a {
+    color: #007bff;
+}
+li {
+    margin-bottom: 8px;
+}
+p {
+    font-size: 18px;
+}
+strong {
+    font-weight: normal;
+}
+img {
+    border-radius: 5px;
+}
+footer {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+nav ul li a {
+    padding: 5px 10px;
 }
