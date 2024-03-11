@@ -5,7 +5,18 @@
     width: 1px;
     height: 1px;
     overflow: hidden;
-    color: black
+    color: black;
+}
+
+#skip-link:focus {
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    z-index: 9999;
+    background-color: purple; 
+    padding: 5px; 
 }
 nav ul {
     list-style-type: none;
@@ -162,4 +173,117 @@ footer {
 }
 nav ul li a {
     padding: 5px 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #skip-link {
+        position: absolute;
+        left: -9999px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        color: black;
+    }
+    
+    #skip-link:focus {
+        left: 0;
+        top: 0;
+        width: auto;
+        height: auto;
+        overflow: visible;
+        z-index: 9999;
+        background-color: purple; 
+        padding: 5px; 
+    }
+    nav ul {
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 15px 20px;
+        font-size: 22px;
+        border-radius: 8px;
+        transition: background-color 0.3s;
+        color: #333;
+        text-decoration: none;
+    }
+
+    nav ul li a:hover {
+        background-color: #f2f2f2;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin: 30px 0;
+    }
+
+    p {
+        font-size: 18px;
+        margin: 20px 0;
+        line-height: 1.6;
+        color: #555;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin: 25px 0;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        margin: 20px 0;
+    }
+
+    img {
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+        padding: 30px;
+        background-color: #f9f9f9;
+        color: #777;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-gap: 20px;
+        padding: 20px; 
+    }
+
+    .grid-container > div {
+        background-color: #f2f2f2;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px; 
+        margin-bottom: 20px; 
+    }
+
+    .animated-element {
+        animation-duration: 0.8s;
+    }
+    header {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    #main {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul li a {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .grid-container > div {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
 }
