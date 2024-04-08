@@ -384,5 +384,29 @@ nav ul li a {
     .grid-container > div h2 {
         font-size: 22px; /* Adjust the font size as needed */
     }
+    nav ul li a.current {
+        font-weight: bold;
+        text-decoration: underline;
+        color: green;
+    }
+    #skip-link {
+        position: absolute;
+        left: -9999px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        color: black;
+    }
     
+    #skip-link:focus {
+        left: 0;
+        top: 0;
+        width: auto;
+        height: auto;
+        overflow: visible;
+        z-index: 9999;
+        background-color: green; 
+        padding: 5px; 
+    }
 }
